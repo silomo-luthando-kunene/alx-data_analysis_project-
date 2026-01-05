@@ -17,8 +17,8 @@ This project is divided into the following parts:
 * **Part 3: Visualising Data:** .
 
 ### 📈 Key Insights
-* **Insight 1:** [Example: Identified a 15% drop in retention among SME clients.]
-* **Insight 2:** [Example: Optimized marketing spend by identifying high-conversion regional peaks.]
+* **Insight 1:** 
+* **Insight 2:** 
 
 ### Conclusion
 ---
