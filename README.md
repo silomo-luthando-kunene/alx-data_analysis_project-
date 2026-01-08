@@ -18,7 +18,8 @@ This project is divided into the following parts:
 
 ### 📈 Key Insights
 * **Corruption Detection & Data Integrity:** Through SQL querying and analysis I identified specific data anomalies that uncovered a bribery scheme among field officials. 
-* **Operational Bottleneck Identification:** Discovered that over 40% of residents faced queue times exceeding 30 minutes. Identified that repairing existing broken infrastructure (reservoirs/pipes) provided a 3x higher ROI in terms of "people served per dollar" compared to digging new wells in specific provinces.
+* **Operational Bottleneck Identification:** Discovered that over 40% of residents faced queue times exceeding 30 minutes. Identified that repairing existing broken infrastructure (reservoirs/pipes) provided a 3x higher ROI in terms of "people served per dollar" compared to digging new wells in specific provinces. Demonstrated that repairing broken infrastructure (pipes/reservoirs) yielded a 3x higher ROI in "people served per dollar" compared to new well construction.
+* **Operational Readiness:** Developed a list to transition "Backlog" items into actionable "Job Lists" for engineering teams.
   
 ### Conclusion
 
