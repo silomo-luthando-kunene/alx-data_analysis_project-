@@ -1,5 +1,8 @@
-# Access to Drinking Water: Data Cleaning, Transformation and Analysis.
-Presentation here: 
+# Maji Ndogo Project - Access to Drinking Water: Data Cleaning, Transformation and Analysis.
+[![View Presentation](./thumbnail.png)](./Maji_Ndogo_Presentation.pdf)
+
+> **[👉 Click here to view the Full Executive Presentation (PDF)](https://github.com/silomo-luthando-kunene/alx-data_analysis_project-/blob/88be3d68cf33ec3d7fa71a2c4c1e37d404f8480b/%5B1%5D%20Preparing%20Data/Preparing%20Data%20Presentation.pdf)**
+
 ## Project Overview
 This project investigates global access to safe and affordable drinking water, aligned with the United Nations Sustainable Development Goal 6 (Clean Water and Sanitation). Utilizing datasets from the WHO/UNICEF Joint Monitoring Programme (JMP), the project analyzes water service levels across national, urban, and rural populations from 2000 to 2020.
 
