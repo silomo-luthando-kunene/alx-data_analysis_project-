@@ -12,3 +12,11 @@ This repository contains two distinct projects focused on water infrastructure a
 * **Key Tools:** SQL (CTEs, Window Functions), Database Design.
 * **Outcome:** 25,398 data-backed infrastructure interventions.
 
+
+## 📁 [Project 3: SQL Operational Strategy](enter file directory here)
+**Objective:** 
+* **Key Tools:** 
+* **Outcome:**
+* 
+### 🏁 Conclusion
+This project demonstrates the intersection of **Industrial Systems Engineering** and **Data Analytics**. It proves that data is not just about numbers; it’s about operational integrity and social impact. By applying systems thinking, I successfully turned a massive, messy dataset into a prioritized, transparent, and audit-ready project management system.
