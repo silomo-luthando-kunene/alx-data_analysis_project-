@@ -7,7 +7,7 @@ This repository contains two distinct projects focused on water infrastructure, 
 * **Key Tools:** Excel, Feature Engineering (ARC), Executive Presentation.
 * **Outcome:** Strategic roadmap for UN Sustainable Development Goal 6.
 
-## 📁 [Project 2: SQL Operational Strategy](./Part-2-SQL)
+## 📁 [Project 2: SQL Operational Strategy]([2] Querying Data)
 **Objective:** Auditing a 60,000-row relational database to detect corruption and automate engineering work orders.
 * **Key Tools:** SQL (CTEs, Window Functions), Database Design.
 * **Outcome:** 25,398 data-backed infrastructure interventions.
