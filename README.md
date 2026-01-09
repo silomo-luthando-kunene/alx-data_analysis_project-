@@ -13,7 +13,7 @@ This repository contains two distinct projects focused on water infrastructure a
 * **Outcome:** 25,398 data-backed infrastructure interventions.
 
 
-## 📁 [Project 3: SQL Operational Strategy](enter file directory here)
+## 📁 [Project 3: ](enter file directory here)
 **Objective:** 
 * **Key Tools:** 
 * **Outcome:**
