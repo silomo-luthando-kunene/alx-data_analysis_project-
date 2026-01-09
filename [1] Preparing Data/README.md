@@ -4,7 +4,7 @@
   <img src="./thumbnail.png" width="400" alt="View Presentation">
 </a>
 
-> **[👉 Click here to view the Full Executive Presentation (PDF)](https://github.com/silomo-luthando-kunene/alx-data_analysis_project-/blob/88be3d68cf33ec3d7fa71a2c4c1e37d404f8480b/%5B1%5D%20Preparing%20Data/Preparing%20Data%20Presentation.pdf)**
+**[👉 Click here to view the Full Executive Presentation (PDF)](https://github.com/silomo-luthando-kunene/alx-data_analysis_project-/blob/88be3d68cf33ec3d7fa71a2c4c1e37d404f8480b/%5B1%5D%20Preparing%20Data/Preparing%20Data%20Presentation.pdf)**
 
 ## Project Overview
 This project investigates progress made towards global access to safe and affordable drinking water, aligned with the **UN Sustainable Development Goal 6 (Clean Water & Sanitation)**. Utilizing WHO/UNICEF data from the Joint Monitoring Programme (JMP), the analysis focuses on the **Annual Rate of Change (ARC)** to determine which regions are successfully scaling water access and which require urgent policy intervention.
