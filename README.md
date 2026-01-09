@@ -2,7 +2,7 @@
 
 This repository contains two distinct projects focused on water infrastructure, moving from global trend analysis to granular database operations.
 
-## 📁 [Project 1: Global Water Trends (Excel)](./Part-1-Excel)
+## 📁 [Project 1: Global Water Trends (Excel)]([[1] Preparing Data](https://github.com/silomo-luthando-kunene/alx-data_analysis_project-/tree/fd098150b2108d84a796beb6733f98129bd4f1d7/%5B1%5D%20Preparing%20Data))
 **Objective:** Analyzing 20 years of WHO/UNICEF data to identify urban-rural disparities.
 * **Key Tools:** Excel, Feature Engineering (ARC), Executive Presentation.
 * **Outcome:** Strategic roadmap for UN Sustainable Development Goal 6.
