@@ -14,7 +14,8 @@ I utilized advanced SQL techniques to join disparate data threads (surveys, audi
 * **Operational Metrics:** Calculated wait-time benchmarks (Queue Analysis) to identify sites failing UN standards.
 * **Complex Data Modeling:** Utilized **CTEs (Common Table Expressions)** and **Window Functions** to rank sources by priority and population served.
 
-
+### 🗺️ Database Architecture (ERD)
+<img src="./thumbnail1.png" width="350" alt="Database ERD 1"> <img src="./thumbnail2.png" width="350" alt="Database ERD 2">
 
 ## 📊 Key Metrics & Discoveries
 This analysis moved beyond visual trends into hard operational numbers:
@@ -34,24 +35,15 @@ The final output was a **Project Implementation Table** designed for field engin
 | **Broken Taps** | Infrastructure Failure | Localized Diagnostic & Repair | Backlog |
 | **Rivers** | Unprotected Source | Drill New Well / Establish Infrastructure | Backlog |
 
-## 💻 Technical Logic Sample: Automated Work-Order Logic
+## 💻 Technical Logic Sample: Retrieving data
 ```sql
--- Consolidating field data into actionable work orders
+-- Determingin which town has the highest ratio of people who have taps but have no running water.
 SELECT
-    l.address, 
-    l.town_name, 
-    s.type_of_water_source,
-    CASE 
-        WHEN wp.results = 'Contaminated: Biological' THEN 'Install UV Filter'
-        WHEN wp.results = 'Contaminated: Chemical' THEN 'Install RO Filter'
-        WHEN s.type_of_water_source = 'river' THEN 'Drill Well'
-        WHEN s.type_of_water_source = 'shared_tap' AND v.time_in_queue > 30 
-             THEN CONCAT("Install ", FLOOR(v.time_in_queue/30), " taps nearby")
-        WHEN s.type_of_water_source = 'tap_in_home_broken' THEN 'Diagnose local infrastructure'
-        ELSE 'Review Infrastructure'
-    END AS Improvement_Plan
-FROM water_source s
-LEFT JOIN well_pollution wp ON s.source_id = wp.source_id
-INNER JOIN visits v ON s.source_id = v.source_id
-INNER JOIN location l ON l.location_id = v.location_id
-WHERE v.visit_count = 1;
+	province_name,
+	town_name,
+	ROUND(tap_in_home_broken / (tap_in_home_broken + tap_in_home) *
+	100,0) AS Pct_broken_taps
+FROM
+	town_aggregated_water_access
+ORDER BY
+	town_name ASC;
