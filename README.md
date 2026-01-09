@@ -2,7 +2,7 @@
 ## ALX Data Analytics Capstone Project
 
 ### 📌 Project Overview
-Maji Ndogo is a developing nation which faced an acute water crisis affecting over 60 000 surveyed locations. The government required a data-driven strategy to transition from crisis management to sustainable infrastructure development. This project is an infrastructure analysis and planning project aimed at solving a national water crisis in fictional Maji Ndogo. This study transitions from raw survey data of 60 000 records to a fully realized operational roadmap. It involves data auditing to identify corruption and the development of dynamic Power BI dashboards to track multi-million dollar budget allocations, project progress and engineer job lists.
+Maji Ndogo is a developing nation which faced an acute water crisis affecting over 464 surveyed locations. The government required a data-driven strategy to transition from crisis management to sustainable infrastructure development. This project is an infrastructure analysis and planning project aimed at solving a national water crisis in fictional Maji Ndogo. This study transitions from raw survey data of 60 000 records to a fully realized operational roadmap. It involves data auditing to identify corruption and the development of dynamic Power BI dashboards to track multi-million dollar budget allocations, project progress and engineer job lists.
 
 ### 🛠 Tech Stack
 * **Language:** MYSQL (Data Cleaning, Exploratory Data Analysis and Feature Engineering).
@@ -12,7 +12,7 @@ Maji Ndogo is a developing nation which faced an acute water crisis affecting ov
 ### 📂 Repository Structure
 This project is divided into the following parts:
 
-* **Part 1: Preparing Data:** Initial data assessment and cleaning. Established a "Single Source of Truth" by standardizing 60 000 survey records, handling missing values and performing initial SQL exploratory analysis.
+* **Part 1: Preparing Data:** Initial data assessment and cleaning. Established a "Single Source of Truth" by standardizing 464 survey records, handling missing values and performing initial SQL exploratory analysis.
 * **Part 2: Querying Data:** Implemented complex SQL joins and Window Functions to uncover patterns in water source quality and queue times. Includes an audit that identified four field workers linked to corrupt data entries.
 * **Part 3: Visualising Data:** Developed interactive Power BI dashboards. Focused on translating metrics (queue times, pollution levels) into executive insights for budget optimization and logistical infrastructure planning.
 
