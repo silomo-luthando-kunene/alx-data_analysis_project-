@@ -36,14 +36,30 @@ The final output was a **Project Implementation Table** designed for field engin
 | **Rivers** | Unprotected Source | Drill New Well / Establish Infrastructure | Backlog |
 
 ## 💻 Technical Logic Sample: Retrieving data
+
+<a href="./thumbnail3.png">
+  <img src="./thumbnail3.png" width="1500">
+</a>
+
 ```sql
--- Determingin which town has the highest ratio of people who have taps but have no running water.
+-- Linking auditor performance records to employees using the employee_id column
 SELECT
-	province_name,
-	town_name,
-	ROUND(tap_in_home_broken / (tap_in_home_broken + tap_in_home) *
-	100,0) AS Pct_broken_taps
+    auditor_report.location_id AS location_id,
+    auditor_report.true_water_source_score AS auditor_score,
+	visits.record_id,
+    water_quality.subjective_quality_score AS surveyor_score,
+	visits.assigned_employee_id AS employee_id,
+	employee.employee_name AS employee
+    
 FROM
-	town_aggregated_water_access
-ORDER BY
-	town_name ASC;
+    auditor_report
+
+JOIN visits ON auditor_report.location_id = visits.location_id
+JOIN water_quality ON visits.record_id = water_quality.record_id
+JOIN employee ON visits.assigned_employee_id = employee.assigned_employee_id
+
+WHERE 
+	auditor_report.true_water_source_score <> water_quality.subjective_quality_score AND
+	visits.visit_count = 1
+
+LIMIT 10000;
