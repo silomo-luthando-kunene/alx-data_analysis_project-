@@ -2,7 +2,7 @@
 ## Business Intelligence &  Reporting
 
 ### 🎯 Project Overview
-In the final phase of the Maji Ndogo project, I transitioned from SQL-based auditing to **Data Storytelling**. This Power BI suite was designed as a "Command Center" turning 60 000+ records into an interactive roadmap for national infrastructure development.
+In the final phase of the Maji Ndogo project, I transitioned from SQL-based auditing to **Data Storytelling**. This Power BI suite was designed as a "Command Center" turning 60000+ records into an interactive roadmap for national infrastructure development.
 
 ### 🛠️ Technical Stack
 * **Tool:** Microsoft Power BI
@@ -58,31 +58,37 @@ Analysis of demographic burdens and the correlation between infrastructure effic
 ---
 
 ### 💰 Dashboard 3: Operational Budget & Project Progress
+Financial oversight and lifecycle tracking of the 25398 national water infrastructure interventions.
+
 <div align="left">
 <img src="./budget_progress.png" width="500" alt="Budget and Work Order Dashboard">
 
-* **Financial ROI:** Using DAX measures, I demonstrated that repairing **Broken Taps** and **Pipes** serves the highest number of people per dollar spent, justifying a "Repair First" budget strategy.
-* **Real-Time Deployment:** This dashboard tracks **25,398 specific interventions**, moving items from "Backlog" to "In Progress" to "Complete" as engineering teams update the system.
+* **Capital Expenditure (CAPEX) Optimization:** Developed a dynamic budget tracking system for a multi-million dollar fund. By categorizing costs by intervention type (e.g., UV Filters, Well Drilling, Tap Repairs) the dashboard identifies that 60% of the total budget is allocated to high-impact rural projects, ensuring that capital is deployed where the infrastructure deficit is most acute.
+* **Agile Project Lifecycle Tracking:** The dashboard functions as a Real-Time Work-Order System monitoring the status of 25398 specific interventions. By visualizing the transition from "Backlog" to "Complete" the system provides instant visibility into project velocity and identifies provincial bottlenecks where work is stalling.
+* **Infrastructural ROI & Efficiency:** Using custom DAX measures I performed an Efficiency Audit which proved that repairing existing "Broken Taps" and "Pipes" serves 3x more people per dollar than new well construction. This data-driven insight allows for a "Repair First" strategy, maximizing the utility of every taxpayer dollar spent.
 
 ---
 
 ### 💰 Dashboard 4: Pollution and Environmental Impact
+Quantitative analysis of water quality metrics and the strategic deployment of filtration technologies.
+
 <div align="left">
 <img src="./pollution_data.png" width="500" alt="Budget and Work Order Dashboard">
 
-* **Financial ROI:** Using DAX measures, I demonstrated that repairing **Broken Taps** and **Pipes** serves the highest number of people per dollar spent, justifying a "Repair First" budget strategy.
-* **Real-Time Deployment:** This dashboard tracks **25,398 specific interventions**, moving items from "Backlog" to "In Progress" to "Complete" as engineering teams update the system.
+* **Chemical vs. Biological Contamination Profiling:** Performed a rigorous breakdown of pollutants across all 60000 sources. By isolating Biological contaminants (E. coli/pathogens) from Chemical pollutants, the dashboard allows for the specific allocation of Reverse Osmosis (RO) systems vs. UV Filtration units, ensuring the engineering solution matches the specific environmental hazard.
+* Long-term Groundwater Sustainability:** The dashboard serves as a baseline for environmental monitoring. By tracking the success of remediation (moving sources from "Polluted" to "Clean"), we can measure the effectiveness of the national water purification strategy over time, providing a clear data trail for international environmental auditors and health organizations.
 
 ---
 
 ### 🧠 Key DAX Implementation
-To drive these insights, I developed custom DAX measures:
-* **`Avg Queue Time`**: Specifically flags sources exceeding the 30-minute UN standard.
-* **`Population Reach`**: A dynamic measure that calculates the number of people impacted by a single intervention.
-* **`Estimated Cost`**: A weighted calculation based on the specific `Improvement_Plan` requirements for each unique source.
+he logic engine driving the system's automated insights:
+
+* **`Average Queue Benchmark:** Flags any source exceeding the 30-minute UN SDG 6 standard.
+* **Dynamic Population Reach:** Calculates the total unique citizens impacted per intervention for "What-If" analysis.
+* **Weighted Improvement Cost:** Maps the Improvement_Plan logic (from SQL) to localized budget requirements.
 
 ### 🏁 Final Conclusion
-As a **Data Practitioner and Industrial Engineer**, this project represents the full lifecycle of a data-driven solution. By applying systems thinking to the Maji Ndogo water crisis, I successfully turned messy field data into a prioritized, budgeted, and transparent project management system that saves lives and optimizes resources.
+This project represents a complete data-driven solution. By applying systems thinking to the Maji Ndogo water crisis, I have bridged the gap between raw records and human impact, creating a blueprint for how data can optimize resources, eliminate corruption and improve the quality of life for an entire nation.
 
 ---
-*Aspiring Professional Engineer | Data Analyst | ALX Africa Capstone*
+*Aspiring Professional Engineer | Data Analyst | ALX Africa Data Analytics Project*
