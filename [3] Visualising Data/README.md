@@ -83,7 +83,7 @@ Quantitative analysis of water quality metrics and the strategic deployment of f
 ### 🧠 Key DAX Implementation
 he logic engine driving the system's automated insights:
 
-* **`Average Queue Benchmark:** Flags any source exceeding the 30-minute UN SDG 6 standard.
+* **Average Queue Benchmark:** Flags any source exceeding the 30-minute UN SDG 6 standard.
 * **Dynamic Population Reach:** Calculates the total unique citizens impacted per intervention for "What-If" analysis.
 * **Weighted Improvement Cost:** Maps the Improvement_Plan logic (from SQL) to localized budget requirements.
 
