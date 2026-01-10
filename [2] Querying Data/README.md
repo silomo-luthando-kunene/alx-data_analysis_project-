@@ -15,7 +15,7 @@ I utilized advanced SQL techniques to join disparate data threads (surveys, audi
 * **Complex Data Modeling:** Utilized **CTEs (Common Table Expressions)** and **Window Functions** to rank sources by priority and population served.
 
 ### 🗺️ Database Architecture (ERD)
-<img src="./thumbnail1.png" width="350" alt="Database ERD 1"> <img src="./thumbnail2.png" width="350" alt="Database ERD 2">
+<img src="./thumbnail1.png" width="350" alt="Database ERD 1"> <img src="./thumbnail2.png" width="330" alt="Database ERD 2">
 
 ## 📊 Key Metrics & Discoveries
 This analysis moved beyond visual trends into hard operational numbers:
