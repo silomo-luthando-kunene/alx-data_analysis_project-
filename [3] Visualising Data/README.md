@@ -22,19 +22,20 @@ Before visualizing the data, I established a robust data model to ensure "Single
 ---
 
 ### 📊 Dashboard 1: National Infrastructure & Access
+Strategic overview of water distribution networks and population coverage
 
 <div align="center">
   <img src="./dashboard.png" width="500" alt="National Dashboard Overview">
   <img src="./thumbnail_national.png" width="500" alt="National Dashboard Overview">
 </div>
 
-* **Bird's Eye View:** Provides a total count [27+million] of people's access to different basic water sources and categorizes water sources by geographical/locational types.
-* **Geo Insights:** Utilizing the Power BI Map visual to pinpoint provinces like **Amanzi** and **Kilimani** as high-priority zones based on the population density and their water access requirements.
-* **Urban vs. Rural Disparity:** A clear visual breakdown showing that rural communities remain significantly more dependent on shared taps and wells compared to urban centers highlighting the urgent need for water source development in rural areas in order to improve water access to rural populations.
-
+* **System Capacity:** Analyzed access for a total population of 27.6+ Million, mapping the distribution across five primary water source types. This high-level view identifies the "Shared Tap" as the backbone of the current infrastructure, serving the majority of the population but introducing significant system bottlenecks.
+* **Geospatial Bottlenecks:** Integrated Power BI Map visuals to perform a Spatial Needs Assessment. By layering population density over source type, Amanzi and Kilimani were identified as critical priority zones. These regions show the highest concentration of "Unimproved" sources, requiring immediate engineering intervention.
+* **Urban-Rural Infrastructure Gap:** Developed a visual comparative analysis revealing that rural sectors are over-indexed on Shared Taps and Wells, while urban centers benefit from "Tap in Home" systems. This disparity highlights a systemic failure in rural last-mile delivery, necessitating a shift toward decentralized water purification systems in remote areas.
 ---
 
 ### 📈 Dashboard 2: Social Impact (Gender & Safety)
+Analysis of demographic burdens and the correlation between infrastructure efficiency and public safety.
 
 <div align="center">
   <!-- Ensure total width does not exceed 100% of the README container width -->
@@ -50,14 +51,24 @@ Before visualizing the data, I established a robust data model to ensure "Single
 </div>
 
 
-* **The Gender Gap:** Data visualization reveals that **women and girls** bear the primary burden of water collection, accounting for over **65%** of trips in rural regions.
-* **Queue-Related Crime:** By overlaying queue times with historical crime data, I identified a direct correlation between **long wait times** and safety risks. This shifted the project's priority from just "providing water" to "ensuring safety" through improved infrastructure.
-
+* **Gendered Labor Disparity:** Quantitative analysis reveals a significant Gender Gap in water procurement. Women and girls account for over 65% of all water collection trips particularly in rural regions. This insight highlights a secondary socio-economic crisis: the loss of "educational and economic hours" for female citizens which directly impacts the nation's long-term human capital development.
+* **Safety Analytics (Queue vs. Crime):** By cross-referencing historical crime records with water source locations a clear correlation was identified between queue times exceeding 60 minutes and an increase in violent incidents. This data suggests that infrastructure bottlenecks are not just operational failures but major contributors to public insecurity.
+* **Temporal Risk Mapping:** The dashboard identifies "High-Risk Windows" (early morning and late evening hours) when water collection is most dangerous. By visualizing these spikes the report provides a mandate for localized security interventions and the prioritization of lighting/surveillance in high-traffic shared-tap zones.
+* **Social ROI of Infrastructure:** This analysis shifts the project’s goal from simple "Water Access" to "Social Protection." Reducing queue times through decentralized taps is shown to have a direct positive impact on reducing crime rates effectively turning infrastructure investment into a primary tool for social stability and gender equity.
 ---
 
 ### 💰 Dashboard 3: Operational Budget & Project Progress
 <div align="left">
 <img src="./budget_progress.png" width="500" alt="Budget and Work Order Dashboard">
+
+* **Financial ROI:** Using DAX measures, I demonstrated that repairing **Broken Taps** and **Pipes** serves the highest number of people per dollar spent, justifying a "Repair First" budget strategy.
+* **Real-Time Deployment:** This dashboard tracks **25,398 specific interventions**, moving items from "Backlog" to "In Progress" to "Complete" as engineering teams update the system.
+
+---
+
+### 💰 Dashboard 4: Pollution and Environmental Impact
+<div align="left">
+<img src="./pollution_data.png" width="500" alt="Budget and Work Order Dashboard">
 
 * **Financial ROI:** Using DAX measures, I demonstrated that repairing **Broken Taps** and **Pipes** serves the highest number of people per dollar spent, justifying a "Repair First" budget strategy.
 * **Real-Time Deployment:** This dashboard tracks **25,398 specific interventions**, moving items from "Backlog" to "In Progress" to "Complete" as engineering teams update the system.
