@@ -18,4 +18,4 @@ This repository contains 3 projects focused on solving water infrastructure and 
 * **Outcome:**
 * 
 ### 🏁 Conclusion
-This project demonstrates the intersection of **Industrial Systems Engineering** and **Data Analytics**. It proves that data is not just about numbers; it’s about operational integrity and social impact. By applying systems thinking, I successfully turned a massive, messy dataset into a prioritized, transparent, and audit-ready project management system.
+This project demonstrates the intersection of **Industrial Systems Engineering** and **Data Analytics**. It proves that data is not just about numbers; it’s about operational efficiency, integrity and business/social impact. By applying systems thinking, I turned a massive, messy dataset into a transparent analytics dashboard and audit-ready project management system.
