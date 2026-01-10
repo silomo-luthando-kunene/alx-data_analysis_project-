@@ -1,49 +1,77 @@
-# Maji Ndogo Part 3: Visualization & Business Intelligence
+# Maji Ndogo Part 3: Visualizing the Data
+## Business Intelligence &  Reporting
 
-## 🎯 Project Scope
-This final phase focused on transforming audited data into an interactive **Power BI Intelligence Visualisation**. The goal was to provide a real-time view of budget requirements, infrastructure gaps, and project progress.
+### 🎯 Project Overview
+In the final phase of the Maji Ndogo project, I transitioned from SQL-based auditing to **Data Storytelling**. This Power BI suite was designed as a "Command Center" turning 60 000+ records into an interactive roadmap for national infrastructure development.
 
-## 🛠️ Technical Stack
+### 🛠️ Technical Stack
 * **Tool:** Microsoft Power BI
-* **Data Modeling:** Schema (Linking 60,000+ records across 5+ tables)
-* **Features:** DAX (Dynamic Measures), Power Query (ETL), Drill-through Reports and Tooltips.
-
-## 📊 Dashboard 1: National Executive Overview
-This dashboard provides a "Bird’s Eye View" of the crisis. It highlights the scale of the population served and the breakdown of water source types nationally.
-
-<img src="./national_dashboard.png" width="800" alt="National Overview Dashboard">
-
-* **Key Insight:** While urban areas show progress, rural regions rely heavily on "Shared Taps," directly correlating with the high queue times identified in the SQL analysis.
-* **Functionality:** Users can filter by Province to see how "Amanzi" or "Hawane" differs from the national average.
-
-## 📈 Dashboard 2: Operational Budget & ROI
-As an **Industrial & Systems Engineer**, I designed this page to solve the "Allocation Problem." It translates infrastructure needs into dollar amounts.
-
-<img src="./budget_dashboard.png" width="800" alt="Budget Allocation Dashboard">
-
-* **Infrastructural ROI:** This visual demonstrates that repairing **broken taps** is the most cost-effective intervention, serving more people per dollar spent than drilling new wells in specific regions.
-* **The "Backlog" Tracker:** A dynamic view of the 25,398 interventions categorized by "Source Status" (Backlog, In Progress, Complete).
-
-## 🕵️ Dashboard 3: Corruption & Integrity Audit
-Building on the SQL audit, this dashboard visualizes the performance of field workers to maintain transparency.
-
-<img src="./audit_dashboard.png" width="800" alt="Data Integrity Dashboard">
-
-* **Automated Flagging:** Visualizes the discrepancy between field surveyor scores and independent auditor scores, making it easy for officials to spot the "suspicious" officials identified in Part 2.
-
-## 🧠 DAX & Data Modeling Logic
-To ensure the dashboard was performant and accurate, I implemented custom DAX measures:
-* **`Total Population Served`**: Dynamic aggregation that reacts to provincial slicers.
-* **`Wait Time Benchmark`**: A KPI that flags any source where the average queue exceeds the UN 30-minute standard.
-
-### 🗺️ The Data Model (Star Schema)
-<img src="./data_model_thumbnail.png" width="400" alt="Power BI Data Model">
-
-## 🏁 Final Conclusion: From Data to Impact
-This dashboard isn't just a collection of charts; it is a **Project Management System**. It allows the government of Maji Ndogo to:
-1. **Identify** exactly where the water is polluted.
-2. **Allocate** budget based on ROI, not guesswork.
-3. **Assign** work orders to engineering teams.
-4. **Audit** the process to ensure every cent is spent on improving lives.
+* **Data Modeling:** Schema (Relational Mapping of 5+ tables)
+* **Intelligence:** DAX (Dynamic Measures), Power Query and Geospatial Mapping.
 
 ---
+
+### ⚙️ System Architecture & Modeling
+Before visualizing the data, I established a robust data model to ensure "Single Source of Truth" integrity across all dashboards.
+
+#### **Entity Relationship Diagram (ERD)**
+<img src="./thumbnail_erd.png" width="450" alt="Database ERD">
+
+> **Note:** The schema connects geographic locations, water source types and field visit logs. By maintaining a normalized structure, the dashboard can drill down from a national level to a specific street address without performance lag.
+
+---
+
+### 📊 Dashboard 1: National Infrastructure & Access
+
+<div align="center">
+  <img src="./dashboard.png" width="500" alt="National Dashboard Overview">
+  <img src="./thumbnail_national.png" width="500" alt="National Dashboard Overview">
+</div>
+
+* **Bird's Eye View:** Provides a total count [27+million] of people's access to different basic water sources and categorizes water sources by geographical/locational types.
+* **Geo Insights:** Utilizing the Power BI Map visual to pinpoint provinces like **Amanzi** and **Kilimani** as high-priority zones based on the population density and their water access requirements.
+* **Urban vs. Rural Disparity:** A clear visual breakdown showing that rural communities remain significantly more dependent on shared taps and wells compared to urban centers highlighting the urgent need for water source development in rural areas in order to improve water access to rural populations.
+
+---
+
+### 📈 Dashboard 2: Social Impact (Gender & Safety)
+
+<div align="center">
+  <!-- Ensure total width does not exceed 100% of the README container width -->
+  <img src="./thumbnail_crime1.png" width="500" alt="Social Impact Analysis 1">
+  <img src="./thumbnail_crime2.png" width="500" alt="Social Impact Analysis 2">
+</div>
+<br/>
+
+<!-- One image below, centered -->
+<div align="left">
+  <!-- Use 800px width for the bottom image -->
+<img src="./thumbnail_crime3.png" width="500" alt="Social Impact Analysis 3">
+</div>
+
+
+* **The Gender Gap:** Data visualization reveals that **women and girls** bear the primary burden of water collection, accounting for over **65%** of trips in rural regions.
+* **Queue-Related Crime:** By overlaying queue times with historical crime data, I identified a direct correlation between **long wait times** and safety risks. This shifted the project's priority from just "providing water" to "ensuring safety" through improved infrastructure.
+
+---
+
+### 💰 Dashboard 3: Operational Budget & Project Progress
+<div align="left">
+<img src="./budget_progress.png" width="500" alt="Budget and Work Order Dashboard">
+
+* **Financial ROI:** Using DAX measures, I demonstrated that repairing **Broken Taps** and **Pipes** serves the highest number of people per dollar spent, justifying a "Repair First" budget strategy.
+* **Real-Time Deployment:** This dashboard tracks **25,398 specific interventions**, moving items from "Backlog" to "In Progress" to "Complete" as engineering teams update the system.
+
+---
+
+### 🧠 Key DAX Implementation
+To drive these insights, I developed custom DAX measures:
+* **`Avg Queue Time`**: Specifically flags sources exceeding the 30-minute UN standard.
+* **`Population Reach`**: A dynamic measure that calculates the number of people impacted by a single intervention.
+* **`Estimated Cost`**: A weighted calculation based on the specific `Improvement_Plan` requirements for each unique source.
+
+### 🏁 Final Conclusion
+As a **Data Practitioner and Industrial Engineer**, this project represents the full lifecycle of a data-driven solution. By applying systems thinking to the Maji Ndogo water crisis, I successfully turned messy field data into a prioritized, budgeted, and transparent project management system that saves lives and optimizes resources.
+
+---
+*Aspiring Professional Engineer | Data Analyst | ALX Africa Capstone*
